@@ -1,5 +1,5 @@
 <div class="container">
-image
+<!-- image
 
 <form #imageForm = ngForm (ngSubmit)="onSubmit(caption,image)">
 <input type="text" #caption ngModel name="caption" id="caption">
@@ -7,6 +7,12 @@ image
 <img [src]="imageUrl"    style="width:250px;height:200px">
 <input type = "file" #image accept="image/*" (change)="handleFileInput($event.target.files)">
 <button type="submit" [disabled] ="image.value =='' || !imageForm.valid">submit </button>
-</form>
+</form> -->
+<input 
+  style="display: none" 
+  type="file" (change)="onFileChanged($event)" 
+  #fileInput>
+<button (click)="fileInput.click()">Select File</button>
+<button (click)="onUpload()">Upload!</button>
 
 </div>
