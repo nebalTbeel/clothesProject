@@ -6,7 +6,7 @@ import {ApiServiceService} from '../api-service.service'
   styleUrls: ['./upload-image.component.css']
 })
 export class UploadImageComponent implements OnInit {
-imageUrl :string = "https://github.com/nebalTbeel/clothesProject/blob/gh-pages/assets/img/hello.jpg";
+imageUrl :string = "https://nebaltbeel.github.io/clothesProject/assets/img/hello.jpg";
 fileToUpload :File = null;
   constructor( private api : ApiServiceService) { }
 

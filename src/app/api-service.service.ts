@@ -88,7 +88,7 @@ getMendata (){
 /*************************** */
 postFile(caption : string, fileToUpload :File){
 
-const endpoint = "https://github.com/nebalTbeel/service/tree/master/src/assets/img";
+const endpoint = "https://github.com/nebalTbeel/clothesProject/blob/gh-pages/assets/img";
 const Formdata :FormData = new FormData();
 Formdata.append('image',fileToUpload,fileToUpload.name);
 Formdata.append('imageCaption',caption);
