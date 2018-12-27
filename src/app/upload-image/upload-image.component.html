@@ -1,0 +1,12 @@
+<div class="container">
+image
+
+<form #imageForm = ngForm (ngSubmit)="onSubmit(caption,image)">
+<input type="text" #caption ngModel name="caption" id="caption">
+
+<img [src]="imageUrl"    style="width:250px;height:200px">
+<input type = "file" #image accept="image/*" (change)="handleFileInput($event.target.files)">
+<button type="submit" [disabled] ="image.value =='' || !imageForm.valid">submit </button>
+</form>
+
+</div>

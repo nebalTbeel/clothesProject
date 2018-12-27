@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "blouse",
+      "size": "2",
+      "color": "red",
+      "prand": "fox",
+      "category": 1,
+      "image": "aaaaaaa",
+      "price": 1555,
+      "people": 2
+    },
+    {
+      "name": "jacket",
+      "size": "",
+      "color": "red",
+      "prand": "fox",
+      "price": 80,
+      "people": "1",
+      "category": "1",
+      "image": "",
+      "id": 2
+    },
+    {
+      "name": "jeans",
+      "size": "20",
+      "color": "blue",
+      "prand": "carter",
+      "price": 150,
+      "people": "2",
+      "category": "3",
+      "image": "",
+      "id": 3
+    },
+    {
+      "name": "shoes1",
+      "size": "40",
+      "color": "black",
+      "prand": "nike",
+      "price": 120,
+      "people": "1",
+      "category": "2",
+      "image": "",
+      "id": 4
+    },
+    {
+      "name": "lklk",
+      "size": "lklk",
+      "color": "lklk",
+      "prand": "lklk",
+      "price": 11,
+      "people": "1",
+      "category": "1",
+      "image": "C:\\fakepath\\46150224_535949573539159_8087953430217228288_n.jpg",
+      "id": 5
+    },
+    {
+      "name": "ooooo",
+      "size": "ooooo",
+      "color": "ooo",
+      "prand": "oooooo",
+      "price": 44,
+      "people": "1",
+      "category": "1",
+      "image": "C:\\fakepath\\46150224_535949573539159_8087953430217228288_n.jpg",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "nebal",
+      "password": "4473033"
+    }
+  ]
+}

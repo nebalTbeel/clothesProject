@@ -1,0 +1,171 @@
+<h1>
+Products Management</h1>
+<br>
+<div id=addform>
+    <form #addForm ="ngForm" (ngSubmit) = 'addProduct(addForm)'>
+
+<div class="form-group row">
+  <div class="col-4">
+    <input class="form-control"  hidden id="example-text-input"   #id='ngModel' name='id' ngModel >
+  
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-search-input" class="col-2 col-form-label">Product Name</label>
+  <div class="col-4">
+    <input class="form-control"  id="example-search-input"  #name='ngModel' name='name' ngModel   required>
+  </div>
+  <span *ngIf='addForm.submitted && name.errors && name.errors.required '>
+      name field is required
+    </span>
+    
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Size</label>
+  <div class="col-4">
+    <input class="form-control"  id="example-email-input"   #size='ngModel' name='size' ngModel required >
+  </div>
+  <span *ngIf='addForm.submitted && size.errors && size.errors.required '>
+      size field is required
+    </span>
+</div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Color</label>
+  <div class="col-4">
+    <input class="form-control"  id="example-email-input" required 
+    minlength="5"  #color='ngModel' name='color' ngModel   required>
+
+  </div>
+  <span *ngIf='addForm.submitted && color.errors && color.errors.required '>
+      Color field is required
+    </span>
+</div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Prand</label>
+  <div class="col-4">
+    <input class="form-control"  id="example-email-input"   #prand='ngModel' name='prand' ngModel  required>
+  </div>
+  <span *ngIf='addForm.submitted && prand.errors && prand.errors.required '>
+      Prand field is required
+    </span>
+</div>
+
+<div class="form-group row">
+    <label for="example-email-input" class="col-2 col-form-label">Price</label>
+    <div class="col-4">
+      <input class="form-control"  type="number" id="example-email-input"    #price='ngModel' name='price' ngModel  required >
+    </div>
+    <span *ngIf='addForm.submitted && price.errors && price.errors.required '>
+        Price field is required
+      </span>
+  </div>
+
+
+
+
+  <div class="form-group row">
+      <label for="example-email-input" class="col-2 col-form-label">For Whome</label>
+      <div class="col-4 dropdown">
+          <select class="col-md-3" style="width:100%;" id="people"  #people='ngModel' name='people' ngModel required>
+           <option id="com" value="1"  >Men</option>
+           <option id="yott" value="2"  >Kids</option>
+           
+         </select>
+      </div>
+      <span *ngIf='addForm.submitted && people.errors && people.errors.required '>
+        this field is required
+      </span>
+    </div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Category</label>
+  <div class="col-4">
+      <select class="col-md-3" style="width:100%;" id="category"     #category='ngModel' name='category' ngModel required>
+          <option id="com" value="1"  >Clothes</option>
+          <option id="yot" value="2"  >Shoes</option>
+          <option id="yott" value="3"  >Accessories</option>
+
+          
+        </select>
+
+  </div>
+  <span *ngIf='addForm.submitted && category.errors && category.errors.required '>
+    this field is required
+  </span>
+</div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Image</label>
+  <div class="col-4">
+    <input type="file" class="form-control"  id="example-email-input"   #image='ngModel' name='image' ngModel>
+  </div>
+  
+</div>
+
+
+
+<div class="form-group row">
+  <div class="col-2 col-form-label"></div>
+  <div class="col-4">
+    
+    <button type="submit"  class="btn btn-primary"  [style.visibility] ="show ?'hidden':'visible' " >add</button>  </div>
+    <button  type="button" (click) = "updateProduct()" class="btn btn-primary"  [style.visibility] ="!show ?'hidden':'visible' ">update</button> 
+   </div>
+</form>
+  </div>
+
+<br>
+<br>
+
+<table class="table" id="table1">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">product name</th>
+      <th scope="col">size</th>
+      <th scope="col">color</th>
+      <th scope="col">prand</th>
+      <th scope="col">category</th>
+      <th scope="col">price</th>
+      <th scope="col">For whome</th>
+      <th scope="col">image</th>
+      <th scope="col">edit</th>
+      <th scope="col"> Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let obj of product" >
+      <td (click) = "onSelect(obj) ">{{obj.id}}</td>
+      <td>{{obj.name}}</td>
+      <td>{{obj.size}}</td>
+      <td>{{obj.color}}</td>
+      <td>{{obj.prand}}</td>
+      <td *ngIf = "obj.category == 1">clothes</td>
+      <td *ngIf = "obj.category == 2">shoes</td>
+      <td *ngIf = "obj.category == 3">accessories</td>
+
+      <td>{{obj.price}}</td>
+      <td *ngIf = "obj.people == 1">Men</td>
+      <td *ngIf = "obj.people == 2">kids</td>
+      <td >{{obj.image}}</td>
+
+
+      <td><button (click) = "edit(obj.id)"  class="btn btn-primary">Edit</button></td>
+
+      <td><button type="submit"   (click) = "delete(obj.id)" class="btn btn-primary">Delete</button></td>
+    </tr>
+    
+  </tbody>
+</table>
+<!--
+
+  <form #addForm = "ngForm" (ngSubmit) = 'addNew(addForm)'>
+name = <input required name="name" ngModel/> 
+age = <input  name="age" ngModel/> 
+
+<button type= "submit">add</button>
+</form>
+-->
+ 

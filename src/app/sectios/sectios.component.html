@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+
+<!-- <app-card> card in sections </app-card> -->
+
+
+<br>
+    <div class="list-group" id="list">
+      <p class="list-group-item list-group-item-action" 
+      *ngFor="let obj of data" (click) = "onSelect(obj) "> 
+       {{obj.name}}   {{obj.id}}
+
+       
+      </p>
+
+    </div>
+
+ 
+    <!-- <form [formGroup] = 'myForm' (ngSubmit) = 'onSubmit()' >
+name : <input formControlName = 'name' #name /> <br>
+<span >{{errorReq}}</span>
+age : <input formControlName = 'age' #age />
+
+
+<button type="button" (click)='resetForm()'>reset</button>
+<button>add</button>
+    </form> -->
+
+
+  
+
+</body>
+</html>

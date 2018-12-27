@@ -1,0 +1,21 @@
+#addform{
+margin-left: 50px;
+}
+#table1{
+width : 60%;
+margin: 50px;
+
+}
+
+.NgIfElse {
+    show: boolean = true;
+  }
+
+ .visibility{
+visibility: visible;
+ }
+
+ span{
+
+  color: red;
+ }
