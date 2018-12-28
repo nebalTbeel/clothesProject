@@ -1,19 +1,38 @@
-<p>
-  section-details works!
-</p>
+<br>
+<br>
+
+<div class="row center"> 
+
+<div class="col-lg-4 col-sm-6 text-center mb-4">
+    
+    <a (click) = "getMendata(1,secId)"><img class="rounded-circle img-fluid d-block mx-auto" src="../../assets/img/man.jpg" alt="">
+      <h3>Men
+      </h3></a>  </div>
+
+
+<div class="col-lg-4 col-sm-6 text-center mb-4">
+  
+     <a (click) = "getMendata(2,secId)">  <img class="rounded-circle img-fluid d-block mx-auto" src="../../assets/img/kids.jpg" alt="">
+      <h3>Kids
+        
+      </h3></a> 
+ </div> 
+
+
+</div>
  
+<div class="row">
 
-<p> <a (click) = "getMendata(1,secId)">men</a> </p>
+    <div *ngFor = "let obj of category" class="col-lg-2 col-sm-3 for">
+      <img src="" width="15px" height="15px" alt="clothes">
+        <p style="font-weight:bold">type : {{obj.name}}</p><br>
+        <p>size : {{obj.size}}</p><br>
+        <p>color : {{obj.color}}</p><br>
+        <p>prand : {{obj.prand}}</p><br>
+        <p>price : {{obj.price}}</p><br>
 
-<p> <a (click) = "getMendata(2,secId)">Kids</a> </p>
+          
+     
+      </div>
+</div>
 
-
-
-<ul *ngFor = "let obj of category">
-<li>{{obj.name}}</li>
-<li>{{obj.id}}</li>
-
-
-
-
-</ul>

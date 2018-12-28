@@ -5,13 +5,13 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link " routerLink="/app-home" target="_blanck">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link " routerLink="/about">About</a>
-      <a class="nav-item nav-link " routerLink="/sections" target="_blanck">Sections</a>
-      <a  *ngIf = "islogin" class="nav-item nav-link " routerLink="/api_data" target="_blanck">Products Management</a>
-     <a  *ngIf = "!islogin" class="nav-item nav-link " routerLink="/app-login" target="_blanck">Login</a>
+      <a class="nav-item nav-link " routerLink="/app-home" >Home <span class="sr-only">(current)</span></a>&nbsp;&nbsp;
+      <a class="nav-item nav-link " routerLink="/about">About</a> &nbsp; &nbsp;
+      <a class="nav-item nav-link " routerLink="/sections" >Sections</a> &nbsp;&nbsp;
+      <a  *ngIf = "islogin" class="nav-item nav-link " routerLink="/api_data" >Products Management</a>&nbsp;&nbsp;
+     <a  *ngIf = "!islogin" class="nav-item nav-link " routerLink="/app-login" >Login</a>&nbsp;&nbsp;
 
-     <a  *ngIf = "islogin" class="nav-item nav-link" routerLink="/app-login" target="_blanck">Logout</a>
+     <a  *ngIf = "islogin" class="nav-item nav-link" routerLink="/app-login" (click) = "Logout()">Logout</a>
 
 <!--  *ngIf = "login" -->
     </div>

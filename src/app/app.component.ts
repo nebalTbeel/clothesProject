@@ -14,16 +14,6 @@ export class AppComponent {
     
   }
 
-  //localstorage.setItem()
-//   checkLogin(e){
-//     console.log(e);
-
-// if(e.success){
-
-//   this.isLogin = true
-//   //this.router.navigate(['/home']);
-// }
-//   }
 
 
 

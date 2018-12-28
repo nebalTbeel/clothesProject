@@ -15,27 +15,25 @@
 <!-- <app-card> card in sections </app-card> -->
 
 
-<br>
-    <div class="list-group" id="list">
-      <p class="list-group-item list-group-item-action" 
+
+    
+
+     <!-- <p class="list-group-item list-group-item-action" 
       *ngFor="let obj of data" (click) = "onSelect(obj) "> 
        {{obj.name}}   {{obj.id}}
 
        
-      </p>
-
-    </div>
-
+      </p>  -->
  
-    <!-- <form [formGroup] = 'myForm' (ngSubmit) = 'onSubmit()' >
-name : <input formControlName = 'name' #name /> <br>
-<span >{{errorReq}}</span>
-age : <input formControlName = 'age' #age />
+      <div class="col-lg-4 col-sm-6 text-center mb-4"  *ngFor="let obj of data" (click) = "onSelect(obj) ">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="../../assets/img/images.jpg" alt="">
+          <h3>{{obj.name}}
+           
+          </h3>
+          <p>{{obj.description}}</p>
+        </div>
+   
 
-
-<button type="button" (click)='resetForm()'>reset</button>
-<button>add</button>
-    </form> -->
 
 
   

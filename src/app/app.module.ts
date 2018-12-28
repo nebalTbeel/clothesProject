@@ -18,7 +18,7 @@ import { CustomPipe } from './custom.pipe';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
- 
+import { IgxButtonModule } from 'igniteui-angular';
 import { SliderModule } from 'angular-image-slider';
 
 @NgModule({
@@ -47,7 +47,8 @@ import { SliderModule } from 'angular-image-slider';
     ReactiveFormsModule,
     BrowserAnimationsModule,
       SliderModule,
-      FileUploadModule
+      FileUploadModule,
+      IgxButtonModule
     
   ],
   providers: [],

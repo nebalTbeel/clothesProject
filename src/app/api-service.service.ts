@@ -2,7 +2,7 @@ import { Injectable  } from '@angular/core';
 import {HttpClient,HttpParams} from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
 import {Iproduct} from './models/product'
-
+import 'hammerjs';
 
 @Injectable({
   providedIn: 'root'

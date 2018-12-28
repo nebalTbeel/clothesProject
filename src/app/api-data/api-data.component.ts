@@ -68,7 +68,7 @@ console.log(form);
 let obj =form.value;
 console.log(form.valid);
 
-if(form.valid === false){
+if(form.valid == true){
 
 
 

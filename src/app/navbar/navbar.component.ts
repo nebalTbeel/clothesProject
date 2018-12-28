@@ -18,7 +18,7 @@ islogin
   }
 
   logout(){
-
+    this.api.setLogin(false)
     
   }
 
