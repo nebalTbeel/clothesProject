@@ -39,7 +39,7 @@ onFileChanged(event) {
 }
 onUpload() {
   // this.http is the injected HttpClient
-  this.http.post('https://nebaltbeel.github.io/clothesProject/assets/img', this.selectedFile)
+  this.http.post('../../clothesProject/assets/img', this.selectedFile)
     .subscribe(res =>this.ress =res);
     console.log(this.ress);
 }

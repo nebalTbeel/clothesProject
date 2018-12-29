@@ -13,7 +13,7 @@
     },
     {
       "name": "jacket",
-      "size": "",
+      "size": "xl",
       "color": "red",
       "prand": "fox",
       "price": 80,
@@ -45,39 +45,6 @@
       "id": 4
     },
     {
-      "name": "lklk",
-      "size": "lklk",
-      "color": "lklk",
-      "prand": "lklk",
-      "price": 11,
-      "people": "1",
-      "category": "1",
-      "image": "C:\\fakepath\\46150224_535949573539159_8087953430217228288_n.jpg",
-      "id": 5
-    },
-    {
-      "name": "ooooo",
-      "size": "ooooo",
-      "color": "ooo",
-      "prand": "oooooo",
-      "price": 44,
-      "people": "1",
-      "category": "1",
-      "image": "C:\\fakepath\\46150224_535949573539159_8087953430217228288_n.jpg",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "name": "kkkkkkkkkkkkj",
-      "size": "jkj",
-      "color": "",
-      "prand": "njn",
-      "price": 10,
-      "people": "1",
-      "category": "1",
-      "image": "undefinedFri Dec 28 2018 01:12:35 GMT+0200 (توقيت إسرائيل الرسمي)"
-    },
-    {
       "id": 9,
       "name": "lkkl",
       "size": "lklk",
@@ -87,6 +54,17 @@
       "people": "1",
       "category": "1",
       "image": "C:\\fakepath\\800_1521725233.jpg"
+    },
+    {
+      "id": 10,
+      "name": "asc",
+      "size": "cszc",
+      "color": "zxczx",
+      "prand": "zxczzc",
+      "price": 3,
+      "people": "1",
+      "category": "1",
+      "image": "C:\\fakepath\\800_1517955153.jpg"
     }
   ],
   "users": [

@@ -23,7 +23,7 @@
  
 <div class="row">
 
-    <div *ngFor = "let obj of category" class="col-lg-2 col-sm-3 for">
+    <!-- <div *ngFor = "let obj of category" class="col-lg-2 col-sm-3 for">
       <img src="" width="15px" height="15px" alt="clothes">
         <p style="font-weight:bold">type : {{obj.name}}</p><br>
         <p>size : {{obj.size}}</p><br>
@@ -31,8 +31,18 @@
         <p>prand : {{obj.prand}}</p><br>
         <p>price : {{obj.price}}</p><br>
 
-          
-     
+      </div> -->
+
+      <div class="col-lg-4 col-sm-6 text-center mb-4"   *ngFor = "let obj of category ">
+        <img class="rounded-circle img-fluid d-block mx-auto det" src="../../assets/img/images.jpg" alt="">
+        <h5>type : {{obj.name}}  </h5>       
+       
+        <p>size : {{obj.size}}</p><br>
+        <p>color : {{obj.color}}</p><br>
+        <p>prand : {{obj.prand}}</p><br>
+        <p>price : {{obj.price}}</p><br>
       </div>
+
+
 </div>
 

@@ -13,3 +13,9 @@
    /* background-image:url("http://fakeimg.pl/365x365/"); */
     background-color: #cccccc;
 }
+
+.img{
+
+    width:300px;
+    height: 300px;
+}

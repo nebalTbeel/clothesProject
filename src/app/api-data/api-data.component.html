@@ -1,8 +1,9 @@
+<br>
 <h1>
   Products Management</h1>
   <br>
   <div id=addform>
-      <form #addForm ="ngForm" (ngSubmit) = 'addProduct(addForm)'>
+      <form #addForm ="ngForm" (ngSubmit) = 'addProduct(addForm)' id="addform">
   
   <div class="form-group row">
     <div class="col-4">
@@ -111,6 +112,7 @@
       <button type="submit"  class="btn btn-primary"  [style.visibility] ="show ?'hidden':'visible' " >add</button>  </div>
       <button  type="button" (click) = "updateProduct()" class="btn btn-primary"  [style.visibility] ="!show ?'hidden':'visible' ">update</button> 
      </div>
+     <br>
   </form>
     </div>
   

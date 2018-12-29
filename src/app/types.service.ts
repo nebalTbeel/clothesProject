@@ -25,9 +25,9 @@ export class TypesService {
  
 
   types=[
-{id:1,name:"Clothes",description:" Clothes For Men And Children"},
-{id:2,name:"Shoes",description:" Shoes For Men And Children "},
-{id:3,name:"Accessories",description:" Accessories For Men And Children"}
+{id:1,name:"Clothes",description:" Clothes For Men And Children",img:"../../assets/img/images.jpg"},
+{id:2,name:"Shoes",description:" Shoes For Men And Children ",img:"../../assets/img/shoes.jpg"},
+{id:3,name:"Accessories",description:" Accessories For Men And Children",img:"../../assets/img/accessories.jpg"}
 
   ]
 
